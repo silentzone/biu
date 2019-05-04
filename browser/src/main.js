@@ -19,8 +19,10 @@ import * as filters from './filters' // global filters
 // 权限指令
 import hasPerm from '@/directive/permission/hasPerm'
 import perm from '@/directive/permission/perm'
+import dictEnum from './dict'
 // 注册全局的权限判断方法和指令
 Vue.prototype.$hasPerm = hasPerm
+Vue.prototype.dictEnum = dictEnum
 Vue.directive('perm', perm)
 
 Vue.use(Element, {

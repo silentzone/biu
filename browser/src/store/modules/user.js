@@ -12,7 +12,7 @@ const user = {
     nick: '',
     avatar: avatorImg,
     introduction: '',
-    visitor: false,
+    visitor:  true, // false, // for test 
     roles: [],
     perms: [],
     setting: {

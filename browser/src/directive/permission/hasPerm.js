@@ -2,6 +2,10 @@
 import store from '@/store'
 
 export default function(permStr) {
+   // 测试 
+   return true;
+
+
   // 如果传入的权限字符串值是空的，视为有权限
   if(!permStr || permStr=='') return true;
   // 超级管理员权限

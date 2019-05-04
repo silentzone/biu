@@ -30,8 +30,9 @@ router.beforeEach((to, from, next) => {
   NProgress.start()
   let token = getToken();
   let hasToken = token != 'undefined' && token != undefined && token !=null && token != '';
-
-  if (hasToken) {
+  // for test 
+     debugger;
+    if (true) { // if (hasToken) {
     // 1.有token
     if (to.path == loginRoute) {
       // 1.1 如果是去登录页，有token视为已登录，直接跳到首页

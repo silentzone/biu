@@ -43,6 +43,43 @@ export const constantRouterMap = [
       meta: { title: '首页', icon: 'dashboard', noCache: true }
     }]
   },
+  // add 
+  {
+    path: '/customer-mange',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/customer-manage/index'),
+        name: 'customer-manage',
+        meta: { title: '客户管理', icon: 'documentation' }
+      }
+    ]
+  },
+  {
+    path: '/goods-mange',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/goods-manage/index'),
+        name: 'goods-manage',
+        meta: { title: '商品管理', icon: 'documentation' }
+      }
+    ]
+  },
+  {
+    path: '/orders-manage',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/orders-manage/index'),
+        name: 'orders-manage',
+        meta: { title: '订单管理', icon: 'documentation' }
+      }
+    ]
+  }
 ]
 
 export default new Router({
@@ -52,6 +89,7 @@ export default new Router({
 })
 
 export const asyncRouterMap = [
+  
 
   {
     path: '/system',
